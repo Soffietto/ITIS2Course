@@ -15,8 +15,7 @@ public class Task5 {
             mass[i] = in.nextLine();
         }
 
-
-        Pattern p = Pattern.compile("(0|1)*");
+        Pattern p = Pattern.compile("0*|1*|1(01)*|0(10)*|(01)*|(10)*");
 
         for (int i = 0; i < n; i++) {
             Matcher m = p.matcher(mass[i]);
